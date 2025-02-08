@@ -1,3 +1,4 @@
+# Developed by Kunal-co also goes by the name of KCCubes
 import discord
 from discord.ext import commands
 import json
@@ -9,8 +10,18 @@ intents.guilds = True
 intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
-# Enter your discord bot token here and run the file make sure to keep them inside " " for it to work
-TOKEN="YOUR_DISCORD_BOT_TOKEN"
+
+def load_config():
+    if not os.path.exists('config.json'):
+        raise FileNotFoundError("config.json file not found. Please create one with the bot token.")
+    with open('config.json', 'r') as f:
+        return json.load(f)
+
+config = load_config()
+TOKEN = config.get("token")
+
+if not TOKEN:
+    raise ValueError("Bot token is missing in config.json")
 
 @bot.event
 async def on_ready():
