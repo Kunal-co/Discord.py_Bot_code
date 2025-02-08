@@ -1,4 +1,4 @@
-# REPORT BOT CODE developed by KCCubes
+# REPORT BOT CODE developed by KCCubes also goes by the name Kunal-co on github
 import discord
 from discord.ext import commands
 from discord import app_commands
