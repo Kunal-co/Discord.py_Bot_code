@@ -106,9 +106,9 @@ class ReportCogs(commands.Cog):
         except discord.Forbidden:
             await interaction.response.send_message(f"Could not send message to {user.mention}. They may have DMs disabled.", ephemeral=True)
 
-    @staticmethod
-    async def on_message(message):
-        if message.guild is None or message.author == message.guild.me:
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        if message.guild is None or message.author == self.bot.user:
             return
 
         guild_id = str(message.guild.id)
@@ -119,7 +119,7 @@ class ReportCogs(commands.Cog):
                 await message.delete()
                 return
 
-            submit_channel = bot.get_channel(config[guild_id]['submit_channel_id'])
+            submit_channel = self.bot.get_channel(config[guild_id]['submit_channel_id'])
 
             if submit_channel:
                 embed = discord.Embed(
@@ -140,9 +140,9 @@ class ReportCogs(commands.Cog):
 
                 await submit_channel.send(embed=embed, files=files)
                 await message.delete()
-                  
-    @staticmethod
-    async def on_application_command_error(interaction: discord.Interaction, error):
+
+    @commands.Cog.listener()
+    async def on_application_command_error(self, interaction: discord.Interaction, error):
         if isinstance(error, app_commands.MissingPermissions):
             missing_perms = ", ".join(error.missing_permissions)
             await interaction.response.send_message(
