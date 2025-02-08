@@ -13,7 +13,7 @@ intents.guilds = True
 intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
-# Enter your discord bot token here and run the file make sure to keep them inside "" for it to work
+# Enter your discord bot token here and run the file make sure to keep them inside " " for it to work
 TOKEN="YOUR_DISCORD_BOT_TOKEN"
 REPORT_ROLE = "🔒 | Report-staff"
 # if you feel like this name isnt good you can change it just keep in " "
