@@ -15,6 +15,8 @@ def save_server_config(config):
     with open('server.json', 'w') as f:
         json.dump(config, f, indent=4)
 
+REPORT_ROLE = "🔒 | Report Staff"
+
 class ReportCogs(commands.cog):
     def __init__(self, bot):
         self.bot = bot
