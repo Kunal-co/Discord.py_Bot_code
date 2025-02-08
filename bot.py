@@ -12,6 +12,7 @@ bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 # Enter your discord bot token here and run the file make sure to keep them inside " " for it to work
 TOKEN="YOUR_DISCORD_BOT_TOKEN"
 
+@bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="A Discord Bot"))
