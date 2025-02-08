@@ -3,8 +3,14 @@ from discord.ext import commands
 import json
 import os
 
-# Enter your bot token here
-TOKEN = "YOUR_DISCORD_BOT_TOKEN"
+intents = discord.Intents.default()
+intents.messages = True
+intents.guilds = True
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
+# Enter your discord bot token here and run the file make sure to keep them inside " " for it to work
+TOKEN="YOUR_DISCORD_BOT_TOKEN"
 
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
