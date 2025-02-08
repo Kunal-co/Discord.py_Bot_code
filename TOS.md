@@ -1,10 +1,10 @@
-Terms of Service (ToS) for Using Kunal-co Bot Codes
+# Terms of Service (ToS) for Using Kunal-co Bot Codes
 
-Copyright (c) 2025 Kunal-co
+## Copyright (c) 2025 Kunal-co
 
-SUBJECT: Read the below ToS before using Kunal-co bot codes
+# SUBJECT: Read the below ToS before using Kunal-co bot codes
 
-I KCCubes/Kunal-co hereby declare the following:
+### I KCCubes/Kunal-co hereby declare the following:
 
 **1.	Acceptance of Terms**
 By downloading, using, or distributing the bot codes from Kunal-co, you agree to these Terms of Service.
