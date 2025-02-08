@@ -3,15 +3,15 @@ from discord.ext import commands
 import json
 import os
 
-
 # Enter your bot token here
 TOKEN = "YOUR_DISCORD_BOT_TOKEN"
 
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="A Discord Bot"))
     await load_extensions()
     await bot.tree.sync()
-    print("All extensions loaded and commands synced and also started up (not so) custom rpc")
+    print("All extensions loaded and commands synced")
 
 async def load_extensions():
     for root, dirs, files in os.walk('./cogs'):
