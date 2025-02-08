@@ -4,7 +4,17 @@ import io
 import json
 from discord import app_commands
 
-class BotCommands:
+def load_server_config():
+    if os.path.exists('server.json'):
+        with open('server.json', 'r') as f:
+            return json.load(f)
+    return {}
+
+def save_server_config(config):
+    with open('server.json', 'w') as f:
+        json.dump(config, f, indent=4)
+
+class ReportCogs(commands.cogs):
     def __init__(self, bot):
         self.bot = bot
 
