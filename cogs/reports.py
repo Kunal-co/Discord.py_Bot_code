@@ -1,6 +1,7 @@
 import discord
 import aiohttp
 import io
+import os
 import json
 from discord import app_commands
 from discord.ext import commands
@@ -17,7 +18,7 @@ def save_server_config(config):
 
 REPORT_ROLE = "🔒 | Report Staff"
 
-class ReportCogs(commands.cog):
+class ReportCogs(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -191,3 +192,6 @@ class ReportCogs(commands.cog):
                 "Error: An unexpected error occurred. Please contact support if the issue persists.",
                 ephemeral=True
             )
+
+async def setup(bot: commands.Bot):
+    await bot.add_cog(ReportCogs(bot))
