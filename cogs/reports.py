@@ -3,6 +3,7 @@ import aiohttp
 import io
 import json
 from discord import app_commands
+from discord.ext import commands
 
 def load_server_config():
     if os.path.exists('server.json'):
@@ -14,7 +15,7 @@ def save_server_config(config):
     with open('server.json', 'w') as f:
         json.dump(config, f, indent=4)
 
-class ReportCogs(commands.cogs):
+class ReportCogs(commands.cog):
     def __init__(self, bot):
         self.bot = bot
 
