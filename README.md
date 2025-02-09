@@ -14,6 +14,13 @@ Read my ToS before using anything from this repository https://github.com/Kunal-
 **YOU ARE PROHIBITED FROM USING THIS CODES FROM THIS REPOSITORY UNLESS AND UNTIL YOU HAVE ACCEPTED THE ToS: [ToS](ToS.md)**
 **IF YOU HAVE ALREADY DOWNLOADED ANYTHING FROM HERE THEN THAT IMPLIES YOU HAVE ACCEPTED THE ToS AND Kunal-co IS NOT RESPONSIBLE FOR ANY MIS USE OF CODES FROM HERE**
 
+## Features
+| S.no  | Name     | Implemented |
+| ----- | -------- | ----------- | 
+|    1. | Report   | ✅          |
+|    2. | Giveaway | ❌          |
+
+
 ## About Me
 I am just a normal guy who likes to develop stuff.
 My Profile: https://kccubes.vercel.app
