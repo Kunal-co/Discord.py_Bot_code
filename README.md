@@ -15,11 +15,14 @@ Read my ToS before using anything from this repository https://github.com/Kunal-
 **IF YOU HAVE ALREADY DOWNLOADED ANYTHING FROM HERE THEN THAT IMPLIES YOU HAVE ACCEPTED THE ToS AND Kunal-co IS NOT RESPONSIBLE FOR ANY MIS USE OF CODES FROM HERE**
 
 ## Features
-| S.no  | Name     | Implemented |
-| ----- | -------- | ----------- | 
-|    1. | Report   | ✅          |
-|    2. | Giveaway | ❌          |
+| S.no  | Name     | Implemented | What it does |
+| ----- | -------- | ----------- | ------------ |
+|    1. | Report   | ✅          | Sends report from a selected channel to another moderator channel|
+|    2. | Giveaway | ❌          | Giveaway stuff like create, reroll, end, status |
 
+## Planned Features
+  - Giveaway
+  - Idk no idea, maybe suggest me
 
 ## About Me
 I am just a normal guy who likes to develop stuff.
