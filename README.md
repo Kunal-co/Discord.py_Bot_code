@@ -18,4 +18,14 @@ Read my ToS before using anything from this repository https://github.com/Kunal-
 I am just a normal guy who likes to develop stuff.
 My Profile: https://kccubes.vercel.app
 
+## Contributing
+
+Contributions are welcome! If you find any issues or want to suggest enhancements, please open an issue or submit a pull request on the GitHub repository. Always ensure to check if an issue or pull request already exists before creating your own! There’s no need to hurry in making contributions, take your time to do it right.
+
+## Help
+
+For support and assistance, join our [Discord server](https://discord.gg/PEwPXB2Yrb) and connect with the community to resolve any issues or queries related to the package.
+
 ## License
+
+`Discord.py_Bot_code` is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
